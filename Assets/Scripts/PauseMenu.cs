@@ -59,6 +59,11 @@ namespace P90brush
             Cursor.visible = true;
             SceneManager.LoadScene("level_selector");
         }
+        
+        public void Restart() {
+            Resume();
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        }
 
         public void Quit() {
             Application.Quit();
